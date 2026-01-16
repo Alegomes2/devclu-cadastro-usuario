@@ -1,6 +1,7 @@
 import { Title, Container, Form, Input, ContainerInputs, InputLabel } from './styles'
 import { useRef } from 'react'
 import api from '../../services/api'
+import { useNavigate } from 'react-router-dom'
 import  Button  from '../../components/Button'
 import TopBackground from '../../components/TopBackground'
 
@@ -9,6 +10,8 @@ function Home() {
   const inputName = useRef()
   const inputAge = useRef()
   const inputEmail = useRef()
+
+  const navigate = useNavigate()
 
   async function registerNewUser(){
     const data = await api.post('/usuarios', {
@@ -51,7 +54,7 @@ function Home() {
         <Button type='button' onClick={registerNewUser} theme='primary'>Cadastrar Usuário</Button>
       </Form>
 
-       <Button type='button'>Ver lista de usuários</Button>
+       <Button type='button' onClick={() => navigate('/lista-de-usuarios')}>Ver lista de usuários</Button>
 
     </Container>
   )
