@@ -1,41 +1,61 @@
-import { Button } from '../../components/Button/styles'
+import  Button  from '../../components/Button'
 import TopBackground from '../../components/TopBackground'
 import api from '../../services/api'
 import { useEffect, useState } from 'react'
+import Trash from '../../assets/trash.svg'
 
-function ListUsers(){
+import { Container, AvatarUsers, Title, ContainerUsers, CardUsers, TrashIcon, } from './styles'
+import { useNavigate } from 'react-router-dom'
+
+function ListUsers() {
 
     const [users, setUsers] = useState([])
+    const navigate = useNavigate()
 
-    useEffect( () => {
+    useEffect(() => {
 
-        async function getUsers (){
-            const {data} = await api.get('/usuarios')
-            
+        async function getUsers() {
+            const { data } = await api.get('/usuarios')
+
             setUsers(data)
         }
 
-       getUsers()
+        getUsers()
 
     }, [])
 
+    async function deleteUsers(id) {
+        await api.delete(`/usuarios/${id}`)
+        const updatedUser = users.filter (user => user.id !== id)
+
+        setUsers(updatedUser)
+    }
 
 
     return (
-        <div>
-            <TopBackground/>
-            <h1>Listagem de usuários</h1>
+        <Container>
+            <TopBackground />
+            <Title>Lista de usuários</Title>
 
-            {users.map((user) => ( 
+            <ContainerUsers>
 
-                <div key={user.id}>
-                    <p>{user.name}</p>
-                    <p>{user.email}</p>
-                    <p>{user.age}</p>
-                </div>    
-            ))}
-            <Button>Voltar</Button>
-        </div>
+                {users.map((user) => (
+
+                    <CardUsers key={user.id}>
+                        <AvatarUsers src={ `https://avatar-placeholder.iran.liara.run/public?username=${user.id}`}/>
+                        <div >
+                            <h3>{user.name}</h3>
+                            <p>{user.age}</p>
+                            <p>{user.email}</p>
+                            
+                        </div>
+                        <TrashIcon onClick={() => deleteUsers(user.id)} src={Trash} alt='icone-lixo'/>
+                    </CardUsers>
+                ))}
+            </ContainerUsers>
+
+            <Button type='button' onClick={() => navigate('/')}>Voltar</Button>
+        </Container>
     )
 }
 

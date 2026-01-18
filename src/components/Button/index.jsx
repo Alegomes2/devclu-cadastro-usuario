@@ -1,4 +1,4 @@
-import { Button } from './styles';
+import {  Button } from './styles';
 import PropTypes from 'prop-types';
 
 function DefaultButton({children, theme, ...props}){
