@@ -5,31 +5,21 @@
 </p>
 
 <p align="center">
-  <em>React + Node.js + Prisma + MongoDB</em>
+  <em>React • Node.js • Prisma • MongoDB</em>
 </p>
-
----
-
-## 🎥 Demonstração do Projeto
-
-👉 Clique no vídeo abaixo para assistir a demonstração completa da aplicação:
-
-[https://github.com/Alegomes2/devclu-cadastro-usuario/blob/main/assets/demo-projeto.mp4](https://github.com/Alegomes2/devclu-cadastro-usuario/blob/main/assets/demo-projeto.mp4)
-
-🎯 *O vídeo demonstra o fluxo completo da aplicação: Front-end em React consumindo uma API REST desenvolvida em Node.js, com persistência de dados em MongoDB via Prisma ORM.*
 
 ---
 
 ## 🧠 Visão Geral
 
-Sistema de **cadastro e gerenciamento de usuários**, desenvolvido para simular um cenário real de aplicação **Full Stack**, com separação clara de responsabilidades entre Front-end, API e banco de dados.
+Sistema de **cadastro e gerenciamento de usuários**, desenvolvido para simular um ambiente real de aplicação **Full Stack**, com comunicação entre Front-end e API REST e persistência de dados em banco **MongoDB**.
 
-O projeto foi pensado para ser:
+O projeto foi estruturado pensando em:
 
-* Escalável
-* Performático
-* Fácil de manter
-* Próximo da realidade do mercado
+* Clareza de código
+* Performance
+* Escalabilidade
+* Boas práticas do mercado
 
 ---
 
@@ -63,38 +53,38 @@ O projeto foi pensado para ser:
 
 ### ⚡ Vite
 
-* Build extremamente rápido
-* Hot Module Replacement instantâneo
-* Menor tempo de feedback no desenvolvimento
-* Melhora direta na produtividade
+* Inicialização extremamente rápida
+* Hot Module Replacement eficiente
+* Menor tempo de build durante o desenvolvimento
+* Melhor experiência de desenvolvimento e resposta da aplicação
 
 ### ⚛️ React
 
-* Componentização para reutilização de código
-* Renderização eficiente
-* Código mais organizado e fácil de escalar
-* Melhor manutenção a longo prazo
+* Componentização para reutilização e organização do código
+* Renderização eficiente baseada em estado
+* Separação clara de responsabilidades
+* Facilidade de manutenção e evolução
 
 ### 🔷 Prisma ORM
 
-* Queries mais seguras e previsíveis
-* Integração eficiente com MongoDB
-* Redução de erros em tempo de desenvolvimento
-* Padronização da camada de dados
+* Abstração segura e moderna para acesso ao banco
+* Queries previsíveis e padronizadas
+* Redução de erros comuns em produção
+* Ganho significativo de produtividade
 
 ### 🍃 MongoDB
 
 * Estrutura flexível baseada em documentos
 * Alta performance para leitura e escrita
-* Facilidade de escalar a aplicação
+* Escalabilidade facilitada
 * Ideal para aplicações modernas
 
 ### 🟢 Node.js + Express
 
 * API leve e performática
-* Arquitetura REST simples e clara
-* Facilidade para evolução do projeto
+* Arquitetura REST simples
 * Baixo acoplamento entre camadas
+* Fácil evolução do projeto
 
 ---
 
@@ -103,7 +93,7 @@ O projeto foi pensado para ser:
 ```
 Front-end (React + Vite)
           |
-          |  HTTP / REST
+          | HTTP / REST
           ↓
 Back-end (Node.js + Express)
           |
@@ -123,6 +113,15 @@ MongoDB Atlas
 * ✅ Exclusão de usuários
 * ✅ Persistência em banco de dados
 * ✅ Integração Front-end + API REST
+
+---
+
+## 📂 Organização do Projeto
+
+* Componentes reutilizáveis
+* Separação entre camadas
+* Código limpo e legível
+* Estrutura preparada para crescimento
 
 ---
 
@@ -180,7 +179,7 @@ http://localhost:5173
 ## 👨‍💻 Autor
 
 **Alexandre Gomes**
-🚀 Desenvolvedor focado em **Back-end e Full Stack**
+🚀 Desenvolvedor com foco em **Back-end e Full Stack**
 
 * GitHub: [https://github.com/Alegomes2](https://github.com/Alegomes2)
 
@@ -188,7 +187,7 @@ http://localhost:5173
 
 ## ⭐ Considerações Finais
 
-Este projeto representa minha evolução prática no desenvolvimento de **APIs REST**, integração com banco de dados e construção de aplicações Full Stack performáticas.
+Este projeto representa minha evolução prática no desenvolvimento de **APIs REST**, integração com banco de dados e construção de aplicações Full Stack performáticas, sempre buscando boas práticas e código de qualidade.
 
-📩 Caso queira conversar sobre este projeto ou minha trajetória, fico à disposição.
+Se você é recrutador ou tech lead, fico à disposição para conversar sobre este projeto.
 
