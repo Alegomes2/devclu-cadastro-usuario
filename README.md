@@ -15,15 +15,11 @@
 > 📌 **Vídeo de demonstração da aplicação em funcionamento**
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=SEU_VIDEO_AQUI" target="_blank">
-    <img src="https://img.youtube.com/vi/SEU_VIDEO_AQUI/0.jpg" alt="Demonstração do Projeto" />
+  <a href="(https://github.com/Alegomes2/devclu-cadastro-usuario/blob/main/assests/VideoCadastroUsuarioReact.mp4)" target="_blank">
+    <img src="" alt="Demonstração do Projeto" />
   </a>
 </p>
 
-📎 **Como usar:**
-
-* Suba o vídeo no **YouTube**, **Loom** ou **Drive**
-* Substitua `SEU_VIDEO_AQUI` pelo ID do vídeo
 
 ---
 
